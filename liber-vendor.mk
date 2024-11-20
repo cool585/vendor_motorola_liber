@@ -7,18 +7,43 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/liber/proprietary/lib/motorola.hardware.popup@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/motorola.hardware.popup@1.0.so \
+    vendor/motorola/liber/proprietary/product/etc/init/init.motcamera3.lens.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.motcamera3.lens.rc \
+    vendor/motorola/liber/proprietary/product/etc/permissions/com.motorola.camera2.content.ai.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera2.content.ai.xml \
+    vendor/motorola/liber/proprietary/vendor/etc/permissions/com.motorola.camera2.content.ai.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera2.content.ai.xml \
+    vendor/motorola/liber/proprietary/product/etc/permissions/com.motorola.camera3.lens.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.lens.xml \
+    vendor/motorola/liber/proprietary/vendor/etc/permissions/com.motorola.camera3.lens.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.lens.xml \
+    vendor/motorola/liber/proprietary/vendor/etc/permissions/com.motorola.camera3.liber.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.liber.xml \
+    vendor/motorola/liber/proprietary/product/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.xml \
+    vendor/motorola/liber/proprietary/vendor/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.xml \
+    vendor/motorola/liber/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
+    vendor/motorola/liber/proprietary/product/etc/permissions/com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.motodisplay.xml \
+    vendor/motorola/liber/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml \
+    vendor/motorola/liber/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera3.xml \
+    vendor/motorola/liber/proprietary/product/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml \
+    vendor/motorola/liber/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml \
+    vendor/motorola/liber/proprietary/system/etc/permissions/com.motorola.frameworks.core.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    vendor/motorola/liber/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/liber/proprietary/system/etc/permissions/moto-checkin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-checkin.xml \
+    vendor/motorola/liber/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
+    vendor/motorola/liber/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
+    vendor/motorola/liber/proprietary/system_ext/bin/motsettings:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/motsettings \
+    vendor/motorola/liber/proprietary/system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
+    vendor/motorola/liber/proprietary/vendor/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
+    vendor/motorola/liber/proprietary/system_ext/etc/public.libraries-motocamera.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocamera.txt \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoft_calibverify_TriCamera.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoft_tricam_calibration.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoft_tricam_verification.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoftbase.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoftbase.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoftcalibration_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoftcalibration_jni.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoftverification_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoftverification_jni.so \
+    vendor/motorola/liber/proprietary/system_ext/lib/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmcf_native_window_helper.motocamera.so \
     vendor/motorola/liber/proprietary/system_ext/lib64/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libarcsoft_calibverify_TriCamera.so \
     vendor/motorola/liber/proprietary/system_ext/lib64/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libarcsoft_tricam_calibration.so \
     vendor/motorola/liber/proprietary/system_ext/lib64/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libarcsoft_tricam_verification.so \
     vendor/motorola/liber/proprietary/system_ext/lib64/libarcsoftbase.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libarcsoftbase.so \
     vendor/motorola/liber/proprietary/system_ext/lib64/libarcsoftcalibration_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libarcsoftcalibration_jni.so \
     vendor/motorola/liber/proprietary/system_ext/lib64/libarcsoftverification_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libarcsoftverification_jni.so \
+    vendor/motorola/liber/proprietary/system_ext/lib64/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmcf_native_window_helper.motocamera.so \
     vendor/motorola/liber/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
     vendor/motorola/liber/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
     vendor/motorola/liber/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice \
@@ -311,3 +336,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/liber/proprietary/vendor/lib64/unnhal-acc-hvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hvx.so \
     vendor/motorola/liber/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so \
     vendor/motorola/liber/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
+PRODUCT_PACKAGES += \
+    MotoSignatureApp \
+    MotCamera2AI \
+    MotCamera3 \
+    MotorolaSettingsProvider \
+    com.motorola.frameworks.core.addon \
+    com.motorola.motosignature \
+    moto-checkin \
+    moto-core_services \
+    moto-settings \
+    com.motorola.androidx.camera.extensions
