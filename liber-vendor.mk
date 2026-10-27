@@ -6,7 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/liber
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/liber/proprietary/lib/motorola.hardware.popup@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/motorola.hardware.popup@1.0.so \
+    vendor/motorola/liber/proprietary/system/lib/motorola.hardware.popup@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/motorola.hardware.popup@1.0.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoft_calibverify_TriCamera.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoft_tricam_calibration.so \
     vendor/motorola/liber/proprietary/system_ext/lib/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarcsoft_tricam_verification.so \
