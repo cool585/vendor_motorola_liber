@@ -415,7 +415,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libprocessgroup",
-                "libtinyalsa",
+                "libtinyalsa_moto",
                 "libtinycompress_vendor",
                 "libaudioroute",
                 "libmotaudioutils",
@@ -455,6 +455,30 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libgui_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtinyalsa_moto",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtinyalsa_moto.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -508,7 +532,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libtinyalsa",
+                "libtinyalsa_moto",
                 "libc++",
                 "libc",
                 "libm",
@@ -535,7 +559,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libtinyalsa",
+                "libtinyalsa_moto",
                 "libutils",
                 "libcutils",
                 "libsensorndkbridge",

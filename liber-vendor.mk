@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fingerprint@1.0 \
     audio.primary.sm6150 \
     libmotaudioutils \
+    libtinyalsa_moto \
     libtinycompress_vendor \
     libmmieffectswrapper \
     libspeakerbundle \
